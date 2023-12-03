@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            display: grid;
+            place-items: center;
+            padding-top: 40px;
+            color: rgb(51, 93, 134);
+            font-weight: 900;
+            font-size: 35px;
+            letter-spacing: 1px;
+            text-align: center;
+            position: relative;
+        }
+
+        body {
+            background-color: rgba(156, 193, 230, 0.708);
+        }
+
+        form {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input {
+            width: 300px;
+            padding: 10px;
+            border-radius: 50px;
+            margin-top: 3px;
+            border: 2px solid rgb(51, 93, 134);
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        #button {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 70%;
+            border-radius: 50px;
+            background-color: rgb(51, 93, 134);
+            border: none;
+            margin-top: 30px;
+            color: white;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Paula's und Lilli's ETF</h1>
+    <div class="login-form">
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Benutzername" required><br>
+            <input type="password" name="password" placeholder="Passwort" required><br>
+            <input type="submit" value="Anmelden" id="button">
+        </form>
+    </div>
+</body>
+</html>
